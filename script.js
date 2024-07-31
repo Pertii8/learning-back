@@ -5,13 +5,14 @@ const http = require("http")// './' accede al directorio dnd estas desp podes im
 
 function requestController(){
     //logica funcion
-    console.log({global});
+    console.log("hola paa");
 }
 
 //configurar nuestro sv
-//const server = http.createServer(requestController)
+const server = http.createServer(requestController)
 
+server.listen(4000)
 //server.listen(4000)
-const person = {name :  "valen"};
+//const person = {name :  "valen"};
 
-console.log(person.name);
+//console.log(person.name);
